@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100">
+    <style>
+        /* Swirling Wind Animation */
+        @keyframes wind-swirls {
+            0% { stroke-dashoffset: 200; opacity: 1; }
+            100% { stroke-dashoffset: 0; opacity: 0; }
+        }
+
+        /* Floating and Twisting Leaves */
+        @keyframes leaf-float {
+            0% { transform: translateX(0) translateY(0) rotate(0deg); opacity: 1; }
+            25% { transform: translateX(10px) translateY(-5px) rotate(20deg); }
+            50% { transform: translateX(25px) translateY(5px) rotate(-20deg); }
+            75% { transform: translateX(40px) translateY(-10px) rotate(30deg); }
+            100% { transform: translateX(55px) translateY(-15px) rotate(-40deg); opacity: 0; }
+        }
+
+        @keyframes leaf-float2 {
+            0% { transform: translateX(0) translateY(0) rotate(0deg); opacity: 1; }
+            25% { transform: translateX(12px) translateY(-7px) rotate(-25deg); }
+            50% { transform: translateX(28px) translateY(6px) rotate(15deg); }
+            75% { transform: translateX(42px) translateY(-12px) rotate(-35deg); }
+            100% { transform: translateX(58px) translateY(-18px) rotate(50deg); opacity: 0; }
+        }
+
+        .wind {
+            stroke: #90A4AE;
+            stroke-width: 1.5;
+            fill: none;
+            stroke-linecap: round;
+            stroke-dasharray: 200;
+            animation: wind-swirls 3s infinite linear;
+        }
+
+        .leaf {
+            fill: #4CAF50;
+            opacity: 1;
+        }
+
+        .leaf1 { animation: leaf-float 4.5s infinite linear; }
+        .leaf2 { animation: leaf-float2 5s infinite linear 0.5s; }
+    </style>
+
+    <!-- More Curly Wind Swirls -->
+    <g>
+        <path class="wind" d="M10 50 Q30 20, 50 40 T90 50 Q70 60, 50 55 T10 50" />
+        <path class="wind" d="M5 60 Q25 30, 45 50 T85 60 Q65 70, 45 65 T5 60" />
+        <path class="wind" d="M15 70 Q35 40, 55 60 T95 70 Q75 80, 55 75 T15 70" />
+    </g>
+
+    <!-- Floating Leaves -->
+    <g>
+        <path class="leaf leaf1" d="M10 75 C12 70, 18 70, 20 75 C18 80, 12 80, 10 75Z"/>
+        <path class="leaf leaf2" d="M20 80 C22 75, 28 75, 30 80 C28 85, 22 85, 20 80Z"/>
+    </g>
+</svg>

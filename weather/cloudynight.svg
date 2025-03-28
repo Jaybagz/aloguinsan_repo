@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 110 100" fill="none">
+    <defs>
+        <filter id="blur" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.05"/>
+            </feComponentTransfer>
+            <feMerge> 
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/> 
+            </feMerge>
+        </filter>
+        <style type="text/css"><![CDATA[
+/*
+
+** MOON
+*/
+@keyframes am-weather-moon {
+  0% {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(15deg);
+       -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.am-weather-moon {
+  -webkit-animation-name: am-weather-moon;
+     -moz-animation-name: am-weather-moon;
+      -ms-animation-name: am-weather-moon;
+          animation-name: am-weather-moon;
+  -webkit-animation-duration: 6s;
+     -moz-animation-duration: 6s;
+      -ms-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+     -moz-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+      -ms-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+          transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+}
+
+@keyframes am-weather-moon-star-1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.am-weather-moon-star-1 {
+  -webkit-animation-name: am-weather-moon-star-1;
+     -moz-animation-name: am-weather-moon-star-1;
+      -ms-animation-name: am-weather-moon-star-1;
+          animation-name: am-weather-moon-star-1;
+  -webkit-animation-delay: 3s;
+     -moz-animation-delay: 3s;
+      -ms-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+     -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@keyframes am-weather-moon-star-2 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.am-weather-moon-star-2 {
+  -webkit-animation-name: am-weather-moon-star-2;
+     -moz-animation-name: am-weather-moon-star-2;
+      -ms-animation-name: am-weather-moon-star-2;
+          animation-name: am-weather-moon-star-2;
+  -webkit-animation-delay: 5s;
+     -moz-animation-delay: 5s;
+      -ms-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 4s;
+     -moz-animation-duration: 4s;
+      -ms-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+     -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+        ]]></style>
+    </defs>
+    <g filter="url(#blur)" id="cloudy-night-1">
+        <g xmlns="http://www.w3.org/2000/svg" transform="translate(22,10)">
+            <g xmlns="http://www.w3.org/2000/svg" transform="translate(16,4), scale(2.5)">
+                <g class="am-weather-moon-star-1">
+                    <polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10"/>
+                </g>
+                <g class="am-weather-moon-star-2">
+                    <polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10" transform="translate(20,10)"/>
+                </g>
+                <g class="am-weather-moon">
+                    <path d="M14.5,13.2c0-3.7,2-6.9,5-8.7   c-1.5-0.9-3.2-1.3-5-1.3c-5.5,0-10,4.5-10,10s4.5,10,10,10c1.8,0,3.5-0.5,5-1.3C16.5,20.2,14.5,16.9,14.5,13.2z" fill="orange" stroke="orange" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+            </g>
+        
+        </g>
+    </g>
+
+
+  <!-- Sun (Moved Slightly to the Right) -->
+
+
+  <!-- Clouds (On Top of the Sun) -->
+   <g transform="translate(15,40),scale(0.7 )">
+  
+  <g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M88.9602 34.0865C95.0208 34.0865 99.9514 39.0517 99.9514 45.1589C99.9514 51.2619 95.0208 56.2271 88.9602 56.2271H41.1719C33.5667 56.2271 27.3777 49.9924 27.3777 42.3291C27.3777 34.6659 33.5667 28.4311 41.1719 28.4311C42.5882 28.4311 43.996 28.6507 45.3512 29.0837L46.2372 29.366L46.5486 28.4855C49.4695 20.2136 57.2746 14.6565 65.9699 14.6565C76.6012 14.6565 85.4249 22.6795 86.496 33.321L86.5949 34.3061L87.5713 34.1848C88.1101 34.1179 88.552 34.0865 88.9602 34.0865Z" fill="#D9D9D9">
+      <animateTransform attributeName="transform" type="translate" values="3 0; -3 0; 3 0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.142 32.0413C5.44802 32.0413 -0.000213623 37.5084 -0.000213623 44.2305C-0.000213623 50.9484 5.44802 56.4177 12.142 56.4177H64.9345C73.3394 56.4177 80.1744 49.5534 80.1744 41.1163C80.1744 32.6792 73.3394 25.8149 64.9345 25.8149C63.371 25.8149 61.8159 26.0575 60.3175 26.5323L59.3411 26.8439L58.996 25.8734C55.77 16.767 47.1462 10.6494 37.5398 10.6494C25.7952 10.6494 16.0478 19.4839 14.8651 31.1984L14.7557 32.2839L13.6782 32.15C13.0806 32.0747 12.5924 32.0413 12.142 32.0413Z" fill="white">
+      <animateTransform attributeName="transform" type="translate" values="-3 0; 3 0; -3 0" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  </g>
+
+
+</svg>

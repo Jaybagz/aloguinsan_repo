@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" width="300" height="300">
+    <defs>
+        <filter id="blur" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.05"/>
+            </feComponentTransfer>
+            <feMerge> 
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/> 
+            </feMerge>
+        </filter>
+        <style type="text/css"><![CDATA[
+/*
+
+/*
+** SUN
+*/
+@keyframes am-weather-sun {
+  0% {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.am-weather-sun {
+  -webkit-animation-name: am-weather-sun;
+     -moz-animation-name: am-weather-sun;
+      -ms-animation-name: am-weather-sun;
+          animation-name: am-weather-sun;
+  -webkit-animation-duration: 9s;
+     -moz-animation-duration: 9s;
+      -ms-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes am-weather-sun-shiny {
+  0% {
+    stroke-dasharray: 3px 10px;
+    stroke-dashoffset: 0px;
+  }
+
+  50% {
+    stroke-dasharray: 0.1px 10px;
+    stroke-dashoffset: -1px;
+  }
+
+  100% {
+    stroke-dasharray: 3px 10px;
+    stroke-dashoffset: 0px;
+  }
+}
+
+.am-weather-sun-shiny line {
+  -webkit-animation-name: am-weather-sun-shiny;
+     -moz-animation-name: am-weather-sun-shiny;
+      -ms-animation-name: am-weather-sun-shiny;
+          animation-name: am-weather-sun-shiny;
+  -webkit-animation-duration: 2s;
+     -moz-animation-duration: 2s;
+      -ms-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+
+
+
+/*
+** EASING
+*/
+.am-weather-easing-ease-in-out {
+  -webkit-animation-timing-function: ease-in-out;
+     -moz-animation-timing-function: ease-in-out;
+      -ms-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+        ]]></style>
+    </defs>
+    <g filter="url(#blur)" id="day">
+        <g transform="translate(35,40),scale(2.5)">
+            <g class="am-weather-sun am-weather-sun-shiny am-weather-easing-ease-in-out">
+                <g>
+                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                </g>
+                
+                <g transform="rotate(45)">
+                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                </g>
+                <g transform="rotate(90)">
+                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                </g>
+                <g transform="rotate(135)">
+                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                </g>
+                <g transform="rotate(180)">
+                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                </g>
+                <g transform="rotate(225)">
+                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                </g>
+                <g transform="rotate(270)">
+                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                </g>
+                <g transform="rotate(315)">
+                    <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                </g>
+            </g>
+            <circle cx="0" cy="0" fill="orange" r="5" stroke="orange" stroke-width="2"/>
+        </g>
+    </g>
+
+
+ <g transform="translate(15,40),scale(0.7 )">
+  
+  <g>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M88.9602 34.0865C95.0208 34.0865 99.9514 39.0517 99.9514 45.1589C99.9514 51.2619 95.0208 56.2271 88.9602 56.2271H41.1719C33.5667 56.2271 27.3777 49.9924 27.3777 42.3291C27.3777 34.6659 33.5667 28.4311 41.1719 28.4311C42.5882 28.4311 43.996 28.6507 45.3512 29.0837L46.2372 29.366L46.5486 28.4855C49.4695 20.2136 57.2746 14.6565 65.9699 14.6565C76.6012 14.6565 85.4249 22.6795 86.496 33.321L86.5949 34.3061L87.5713 34.1848C88.1101 34.1179 88.552 34.0865 88.9602 34.0865Z" fill="#D9D9D9">
+      <animateTransform attributeName="transform" type="translate" values="3 0; -3 0; 3 0" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.142 32.0413C5.44802 32.0413 -0.000213623 37.5084 -0.000213623 44.2305C-0.000213623 50.9484 5.44802 56.4177 12.142 56.4177H64.9345C73.3394 56.4177 80.1744 49.5534 80.1744 41.1163C80.1744 32.6792 73.3394 25.8149 64.9345 25.8149C63.371 25.8149 61.8159 26.0575 60.3175 26.5323L59.3411 26.8439L58.996 25.8734C55.77 16.767 47.1462 10.6494 37.5398 10.6494C25.7952 10.6494 16.0478 19.4839 14.8651 31.1984L14.7557 32.2839L13.6782 32.15C13.0806 32.0747 12.5924 32.0413 12.142 32.0413Z" fill="white">
+      <animateTransform attributeName="transform" type="translate" values="-3 0; 3 0; -3 0" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  </g>
+</svg>
